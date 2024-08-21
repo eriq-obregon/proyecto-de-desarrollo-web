@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+}
+nav{
+    background-color: #333; 
+    padding: 10px;
+    display: flex; 
+    justify-content: center; 
+    border-radius: 5px; 
+}
+
+nav a {
+    color: white;
+    text-decoration: none; 
+    margin: 0 15px;
+    padding: 10px 15px;
+    border-radius: 5px; 
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+.formulario {
+    background-color: steelblue;
+    text-align: center;
+    height: 450px;
+    border: 2px solid ;
+    border-color: black;
+}
+
+.escribir{
+    display: flex;
+    align-items: center;
+}
+.msj {
+    color: black;
+    margin-right: 10px;
+    margin-left: 60px;
+}
+
+#name{
+    margin: 30px;
+}
+#message{
+    margin: 60px
+}
+textarea{
+    
+    height: 200px;
+    flex: 1;
+}
+.imagen-container{
+
+    
+    align-items: center;
+    height: 400px; 
+    text-align: center; 
+}
+img{
+    width: 400px;
+    height: 250px;
+    margin: 50px;
+}
+img.zoom {
+    transform: scale(1.5);
+    transition: transform 0.5s;
+}
+ 
