@@ -9,23 +9,31 @@ $(document).ready(function () {
     $('.img').on('mouseleave', function () {
         $(this).removeClass('zoom');
     });
-    
+
     //evento para cambiar color del bk
 
     const $form = $('form');
- 
-    $form.on('mouseenter', function() {
+
+    $form.on('mouseenter', function () {
         $(this).css('background-color', '#f0f0f0');
     });
- 
-    $form.on('mouseleave', function() {
+
+    $form.on('mouseleave', function () {
         $(this).css('background-color', '');
     });
 
     //boton que muestre mensaje al completar form
 
-    $('.btn').on('click',function(){
+    $('.btn').on('click', function () {
         alert('formulario enviado exitosamente!')
     })
 
+    //mostrar en la consola todo lo que se escribe
+
+    $('#name').on('input', function () {
+        console.log('Nombre: ' + $(this).val())
+    })
+    $('#message').on('input', function () {
+        console.log('Mensaje: ' + $(this).val())
+    })
 })
