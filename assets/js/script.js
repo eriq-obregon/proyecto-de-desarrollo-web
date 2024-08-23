@@ -27,13 +27,4 @@ $(document).ready(function () {
     $('.btn').on('click', function () {
         alert('formulario enviado exitosamente!')
     })
-
-    //mostrar en la consola todo lo que se escribe
-
-    $('#name').on('input', function () {
-        console.log('Nombre: ' + $(this).val())
-    })
-    $('#message').on('input', function () {
-        console.log('Mensaje: ' + $(this).val())
-    })
 })
