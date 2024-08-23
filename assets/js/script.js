@@ -13,9 +13,9 @@ $(document).ready(function () {
     //evento para cambiar color del bk
 
     const $form = $('form');
-
-    $form.on('mouseenter', function () {
-        $(this).css('background-color', '#f0f0f0');
+ 
+    $form.on('mouseenter', function() {
+        $(this).css('background-color', '#190f85');
     });
 
     $form.on('mouseleave', function () {
@@ -24,7 +24,7 @@ $(document).ready(function () {
 
     //boton que muestre mensaje al completar form
 
-    $('.btn').on('click', function () {
-        alert('formulario enviado exitosamente!')
+    $('.btn').on('click',function(){
+        swal('El formulario se envio correctamente', 'Gracias')
     })
 })
