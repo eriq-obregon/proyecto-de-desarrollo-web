@@ -15,7 +15,7 @@ $(document).ready(function () {
     const $form = $('form');
  
     $form.on('mouseenter', function() {
-        $(this).css('background-color', '#f0f0f0');
+        $(this).css('background-color', '#190f85');
     });
  
     $form.on('mouseleave', function() {
@@ -25,7 +25,7 @@ $(document).ready(function () {
     //boton que muestre mensaje al completar form
 
     $('.btn').on('click',function(){
-        alert('formulario enviado exitosamente!')
+        swal('El formulario se envio correctamente', 'Gracias')
     })
 
 })
