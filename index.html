@@ -6,27 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 
 <body>
-    <nav>
+    <nav>   
         <a id="titulo" href="#"> Antifishing</a>
         <a href=#>Inicio</a>
         <a href=#>Acerca de</a>
         <a href=#>Contacto</a>
     </nav>
-
-    <form action="submit" class="formulario">
-        <div>
-            <label for="name">Nombre:</label>
-            <input type="text" id=name name='name' required placeholder="su nombre porfa">
-        </div>
-        <div class="escribir">
-            <label for="msj" class="msj">Mensaje:</label>
-            <textarea name="message" id="message" required placeholder="Aqui va su mensajito"></textarea>
-        </div>
-        <button class="btn" type="submit">Enviar</button>
-    </form>
+    <div class="container">
+        <form  class="formulario">
+            <div class="name">
+                <label for="name"></label>
+                <input type="text" id=name name='name' required placeholder="Nombre">
+            </div>
+            <div class="escribir">
+                <label for="msj" class="msj"></label>
+                <textarea name="message" id="message" required placeholder="Escriba el mensaje"></textarea>
+            </div>
+            <button class="btn" type="submit">Enviar</button>
+            <div class="succes">
+                Su mensaje ha sido enviado con exito!
+            </div>
+        </form>
+    </div>
 
     <div class="imagen-container">
         <img class="img" src="assets/img/desarrollo-software-a-medida-scaled.jpg" alt="Imagen 1">
@@ -37,6 +42,7 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="assets/js/script.js"></script>
+    
 </body>
 
 </html>

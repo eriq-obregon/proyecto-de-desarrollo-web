@@ -25,7 +25,7 @@ nav a:hover {
 .formulario {
     background-color: plum;
     text-align: center;
-    height: 450px;
+    height: 550px;
     border: 2px solid ;
     border-color: black;
 }
@@ -38,6 +38,27 @@ nav a:hover {
     color: black;
     margin-right: 10px;
     margin-left: 60px;
+}
+
+.escribir textarea{
+    width: 100px;
+    padding: 20px 60px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    background-color: #eee;
+    border-radius: 40px;
+    
+
+}
+
+.btn{
+    width: 100px;
+    height: 30px;
+    border-radius: 16px;
+    cursor: pointer;
+    background-color: #806bcd;
+    color: #fff;
 }
 
 #name{
@@ -68,3 +89,21 @@ img.zoom {
     transition: transform 0.5s;
 }
  
+.name input{
+   width: 100px;
+   padding: 20px 60px;
+   border: none;
+   outline: none;
+   font-size: 18px;
+   background-color: #eee;
+   border-radius: 40px;
+   
+}
+
+.succes{
+    font-size: 20px;
+    color: green;
+    position: absolute;
+    display: none;
+}
+
