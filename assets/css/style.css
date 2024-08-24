@@ -1,18 +1,57 @@
 body {
     font-family: Arial, sans-serif;
+    background-color: #f3f2f7;
 }
 nav{
-    background-color: #333; 
+    background-color: #141010; 
     padding: 10px;
     display: flex; 
-    justify-content: center; 
-    border-radius: 5px; 
+    justify-content: flex-start;
+    border-radius: 5px;
+    display: flex; 
+    align-items: center;
 }
+
+.logo {
+    width: 100px; 
+    height: auto; 
+    margin-right: 10px; 
+    border-radius: 3px;   
+}
+
+.logo-container{
+    justify-content: space-between;
+}
+
+.card-img-top{
+    width: 50%;
+    height: 500px;    
+    margin: none;
+    border-radius: 5px;
+}
+
+.card-title,.card-body, .card-text, .card-text-titulo {
+   color: rgb(85, 19, 151);
+}
+
+.card-title {
+    font-size: 28px;
+ }
+
+.card-container {
+    display: flex;
+    justify-content: space-between; 
+}
+
+.card-text-titulo{
+    font-weight: bold;
+}
+
 
 nav a {
     color: white;
     text-decoration: none; 
-    margin: 0 15px;
+    margin: 0 10px;
     padding: 10px 15px;
     border-radius: 5px; 
     transition: background-color 0.3s;
@@ -47,9 +86,7 @@ nav a:hover {
     outline: none;
     font-size: 18px;
     background-color: #eee;
-    border-radius: 40px;
-    
-
+    border-radius: 40px;  
 }
 
 .btn{
@@ -72,18 +109,20 @@ textarea{
     height: 200px;
     flex: 1;
 }
-.imagen-container{
-
-    
+.imagen-container{    
     align-items: center;
     height: 400px; 
     text-align: center; 
+    width: 800px
 }
-img{
-    width: 400px;
-    height: 250px;
-    margin: 50px;
+
+.imagen{
+    width: 200px;
+    height: 500px;    
+    margin: 100px; 
 }
+
+
 img.zoom {
     transform: scale(1.5);
     transition: transform 0.5s;
@@ -105,5 +144,12 @@ img.zoom {
     color: green;
     position: absolute;
     display: none;
+}
+
+footer{
+
+    color: white;
+    background-color: #141010;
+    font-size: 12px;
 }
 
