@@ -9,19 +9,19 @@ $(document).ready(function () {
     $('.img').on('mouseleave', function () {
         $(this).removeClass('zoom');
     });
-    
+
     //evento para cambiar color del bk
 
-    const $form = $('form');
+/*     const $form = $('form');
  
     $form.on('mouseenter', function() {
         $(this).css('background-color', '#190f85');
     });
- 
-    $form.on('mouseleave', function() {
+
+    $form.on('mouseleave', function () {
         $(this).css('background-color', '');
     });
-
+ */
     //boton que muestre mensaje al completar form
 
    
@@ -53,6 +53,35 @@ $(document).ready(function () {
     
     link.addEventListener('click', abrirModal);
 
+        //botones de desplazamiento 
+
+        $('#quienessomos').click(function(event) {
+            event.preventDefault();
+            $('html').animate({
+                scrollTop: $('#seccion1').offset().top
+            }, 1000);
+        });
+
+        $('#servicios').click(function(event) {
+            event.preventDefault();
+            $('html').animate({
+                scrollTop: $('#seccion2').offset().top
+            }, 1000);
+        });
+
+        $('#porqelegirnos').click(function(event) {
+            event.preventDefault();
+            $('html').animate({
+                scrollTop: $('#seccion3').offset().top
+            }, 1000);
+        });
+
+        $('#resumen').click(function(event) {
+            event.preventDefault();
+            $('html').animate({
+                scrollTop: $('#seccion4').offset().top
+            }, 1000);
+        });
 
 })
 
