@@ -24,7 +24,36 @@ $(document).ready(function () {
 
     //boton que muestre mensaje al completar form
 
-    $('.btn').on('click',function(){
-        swal('El formulario se envio correctamente', 'Gracias')
-    })
+   
+
+
+    var modal = document.getElementById('myModal');
+    var link = document.querySelector('a[href="contacto.html"]');
+    var span = document.getElementsByClassName('close');
+
+
+    // abrir modal y cerrar modal
+
+    function abrirModal(e) {
+        e.preventDefault();
+        fetch('contacto.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('modalBody').innerHTML = data;
+                modal.style.display = 'block';
+    
+                const closeBtn = document.querySelector('.close-btn');
+                closeBtn.addEventListener('click', cerrarModal);
+            });
+    }
+    
+    function cerrarModal() {
+        modal.style.display = 'none';
+    }
+    
+    link.addEventListener('click', abrirModal);
+
+
 })
+
+
